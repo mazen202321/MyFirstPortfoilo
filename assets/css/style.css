@@ -1,0 +1,402 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+html{
+    --secondcoler:  rgba(255, 255, 255, 0.7);
+    --mainColer:#cf5331;
+}
+
+.contanir{
+    width:80%;
+margin: 5px auto;}
+.navbar{
+    
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    z-index: 99999;
+    
+}
+.logo{
+   
+    float: left;
+    width: 35%;
+    color: var(--secondcoler);
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.nav{
+   
+    float: left;
+    width: 65%;
+}
+.nav .list{
+list-style-type: none;
+
+;
+}
+.list{
+    text-align: right;
+}
+.list-item{
+    display: inline-block;
+    margin-left:15px;
+    cursor:pointer;
+    
+}
+.link-nav{
+    text-decoration: none;
+    color: var(--secondcoler);
+    text-transform: capitalize;
+    margin-right: 20xp;
+    font-size: 20px;
+}
+.link-nav:hover{
+    color: #fff;
+   
+    }
+@media (max-width: 576px){
+    .contanir{
+        width: 90%;
+        
+    }
+  
+  .logo{
+        
+        width: 10%;
+       
+    }
+    .navbar .nav{
+        width: 90%;
+        text-align: center;
+    }
+    .logo,  .link-nav  {
+        font-size: 16px;
+        
+    }
+} 
+.hedar-content{
+  
+  
+    
+    background-image: url(../img/bg-masthead.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-position: 0 -82px;
+    
+
+}
+@media (max-width: 576px){
+    .hedar-content{
+        background-position: 0 0px;
+    }
+}
+.head-content-item{
+    padding-top: 250px;
+    text-align: center;
+   
+}
+
+.heder-text{
+    text-transform: uppercase;
+   
+    font-size: 40px;
+    color: var(--secondcoler);
+  
+    width: 50%;
+    margin: auto;
+    
+    
+}
+@media (max-width: 576px){
+    .heder-text{
+        font-size: 20px;
+        width: 100%;
+    }
+}
+.hedparag{
+    font-size: 20px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 32px;
+    color: var(--secondcoler);
+}
+@media(max-width: 576px){
+   .hedparag{
+       
+       width: 90%;
+       font-size:16px
+   } 
+}
+.line{
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: var(--mainColer);
+    margin:20px  auto;
+    
+
+}
+.link{
+ 
+    background-color: var(--mainColer);
+
+    
+    color: var(--secondcoler);
+    width: fit-content;
+    padding: 20px 50px;
+    border-radius: 28px;
+    margin-top: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor:pointer;
+   
+}
+
+@media(max-width: 576px){
+    .link{
+        font-size: 16px;
+    }
+}
+
+.hedar .overlay{
+    height: 100%;
+   background:  linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%);
+}
+
+.get-start{
+    background-color: var(--mainColer);
+    height: 360px;
+    text-align: center;
+    padding: 70px; 
+}
+.get-start .start-h{
+color: var(--secondcoler);
+margin-bottom: 10px;
+text-transform: capitalize;
+font-size: 30px;
+
+}
+
+.get-start .line{
+   
+    background-color: var(--secondcoler);
+}
+.get-start .start-prg{
+    margin: auto;
+    color: var(--secondcoler);
+    width: 53%;
+    font-size: 18px;
+    margin-bottom: 40px;
+
+}
+@media (max-width: 576px){
+    .get-start{
+        padding: 40px; 
+    } 
+    .get-start .start-h{
+        font-size: 23px;
+    }
+    .get-start .start-prg{
+    width: 80%;
+    font-size: 16px;
+    }
+}
+.get-start .link,.download .link{
+    background-color: #fff;
+    color: black;
+    padding: 20px 50px;
+    border-radius: 28px;
+    margin-top: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+@media (max-width : 576px){
+    .get-start .link, .download .link{
+        padding: 20px 30px;
+    }
+}
+.serveses {
+    padding: 70px;
+    text-align: center;
+
+}
+
+.serveses .ser-hed{
+    text-transform: capitalize;
+font-size: 30px;
+margin-bottom: 10px;
+}
+
+.serves-content{
+   
+  overflow: hidden;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.serv-Item{
+    float: left;
+    width: 25%;
+}
+.serv-Item i{
+    color:var(--mainColer);
+    font-size: 37px;
+    margin: 10px;
+}
+.serv-item-h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+
+}
+.serv-prg{
+    font-size: 18px;
+    width: 84%;
+    margin: auto;
+    
+}
+@media (max-width : 576px){
+    .serveses {
+        padding: 30px;
+    }
+    .serveses .ser-hed{
+        font-size: 23px;
+    }
+    .serv-Item{
+        float: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .serves-content{
+        margin-top: 30px;
+       
+        
+    }
+    .serv-item-h3{
+        font-size: 18px;
+    }.serv-prg{
+        font-size: 16px;
+        width: 100%;
+        margin: px;
+    }
+}
+.portfolio-items{
+    overflow: hidden;
+    width: 100%;
+}
+.portfolio-item{
+float: left;
+width: 33.33%;
+position: relative;
+}
+
+.portfolio-item img{
+display: block;
+}
+.portfolio-item .overlay{
+    background-color: var(--mainColer);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 29%;
+    opacity: 0;
+}
+
+.portfolio-item .overlay h3{
+    text-transform: capitalize;
+    font-size: 18px;
+    color: var(--secondcoler);
+    font-weight: 500;
+}
+@media(max-width : 576px){
+    .portfolio-item{
+        float: none;
+        width: 100%;
+    }
+}
+.portfolio-item .overlay p{
+    text-transform: capitalize;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 600;
+}
+.portfolio-item:hover .overlay{
+    opacity:.9;
+    cursor:pointer;
+}
+.download{
+    background-color: #343a40;
+    padding: 70px;
+    text-align: center;
+}
+.download h2{
+    padding-bottom: 36px;
+    color: #fff;
+}
+.content{
+    padding: 70px;
+    text-align: center;
+}
+.content h2{
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+.content-description{
+    width: 38%;
+    color: #6c757D;
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 36px;
+}
+
+.content-items{
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+.content-item{
+    float: left;
+    width: 50%;
+}
+.content-item i{
+    color: #6c757D;
+    font-size: 38px;
+    margin-bottom: 17px;
+}
+
+.email{
+    color: var(--mainColer);
+}
+@media(max-width : 576px){
+    .content{
+        padding: 40px;
+      
+    }
+    .content-description{
+        width: 90%;
+    }
+    .content-items{
+        width: 100%;
+    }
+    .content-item{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+}
+.footer{
+    text-align: center;
+    padding: 50px;
+    background-color: #c8ced3;
+}
